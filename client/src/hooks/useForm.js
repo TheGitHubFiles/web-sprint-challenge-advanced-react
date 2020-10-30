@@ -21,11 +21,10 @@ export const useForm = () => {
     };
 
     const handleSubmit = (e) => {
-        console.log(showSuccessMessage)
         e.preventDefault();
         setShowSuccessMessage(true)
-        console.log(showSuccessMessage)
+
     };
 
-    return [values, handleChanges, handleSubmit, showSuccessMessage];
+    return [values, handleSubmit, handleChanges, showSuccessMessage];
 }
